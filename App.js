@@ -13,6 +13,7 @@ for (var i = 0; i < buttons.length; i++) {
 
     value += parseInt(dvalue);
     console.log(value);
+    console.log(bid_value);
     document.getElementById('value1').innerHTML = value;
     document.getElementById('value2').innerHTML = value;
     document.getElementById('value3').innerHTML = value;
