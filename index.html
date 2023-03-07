@@ -40,15 +40,17 @@
             </div>
             <div id="Question4" class="panel">
                 <p class="lead">Make your bid here:</p>
-                <input class="btn btn-lg btn-light fw-bold border-white bg-white" type="text" id="bid">
+                <p><input name="bid" class="btn btn-lg btn-light fw-bold border-white bg-white" type="text" id="bid"></p>
                 <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="button" data-next="Final" value-change="0">Submit</button>
             </div>
             <div id="Final" class="panel">
                 <p class="lead">Thank you for participating in the survey!</p>
+                <p class="lead">Your final value is: <b>$<span id="value3"></span></b></p>
+                <p class="lead">You bid: <b>$<span id="bid_value"></span></b></p>
             </div>
         </main>
         <footer class="mt-auto text-white-50">
-            <p>Proof of concept for electricity program survey by Aaron Bushnell</p>
+            <p>Proof of concept for electricity program survey by Aaron Bushnell.</p>
         </footer>
     </div>
 
