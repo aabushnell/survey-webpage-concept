@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#712cf9">
+</head>
+<body class="d-flex h-100 text-center text-bg-dark">
+    <div class="show cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div class="show"">
+              <h3 class="float-md-start mb-0">Survey Concept</h3>
+              <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Survey</a>
+                <a class="nav-link fw-bold py-1 px-0" href="#">About</a>
+              </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Survey Question</h1>
+            <div id="Question1" class="panel show" class="px-3">
+                <p class="lead">Would you participate in the program for <b>no payment?</b></p>
+                <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="button" data-next="Question4" value-change="0">Yes</button>
+                <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="button" data-next="Question2" value-change="10">No</button>
+            </div>
+            <div id="Question2" class="panel">
+                <p class="lead">Would you participate in the program for <b>$<span id="value1"></span></b>?</p>
+                <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="button" data-next="Question3" value-change="-2">Yes</button>
+                <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="button" data-next="Question2" value-change="10">No</button>
+            </div>
+            <div id="Question3" class="panel">
+                <p class="lead">Would you participate in the program for <b>$<span id="value2"></span></b>?</p>
+                <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="button" data-next="Question3" value-change="-2">Yes</button>
+                <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="button" data-next="Question4" value-change="0">No</button>
+            </div>
+            <div id="Question4" class="panel">
+                <p class="lead">Make your bid here:</p>
+                <input class="btn btn-lg btn-light fw-bold border-white bg-white" type="text" id="bid">
+                <button class="btn btn-lg btn-light fw-bold border-white bg-white" type="button" data-next="Final" value-change="0">Submit</button>
+            </div>
+            <div id="Final" class="panel">
+                <p class="lead">Thank you for participating in the survey!</p>
+            </div>
+        </main>
+        <footer class="mt-auto text-white-50">
+            <p>Proof of concept for electricity program survey by Aaron Bushnell</p>
+        </footer>
+    </div>
+
+    <script src="App.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
